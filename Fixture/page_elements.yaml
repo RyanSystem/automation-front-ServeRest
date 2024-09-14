@@ -1,0 +1,46 @@
+login:
+  img: //img[contains(@class,'imagem')]
+  login_input: //input[@id='email']
+  password_input: //input[@id='password']
+  button_entrar: //button[contains(.,'Entrar')]
+  link_cadastrar: //a[contains(.,'Cadastre-se')]
+
+Cadastro:
+  name_cadastro: //input[@id='nome']
+  email_cadastro: //input[contains(@id,'email')]
+  senha_cadastro: //input[contains(@id,'password')]
+  button_cadastro: //button[contains(.,'Cadastrar')]
+  link_cadastro:  //button[@data-testid='entrar']
+  check_box_adm:  //input[@id='administrador']
+
+Principal:
+  button_logout:  //button[contains(.,'Logout')]
+  titulo: //h1[contains(.,'Serverest Store')]
+  new_user:  //a[@data-testid='cadastrarUsuarios']
+  list_user:  //a[@data-testid='listarUsuarios']
+  new_product:  //a[@data-testid='cadastrarProdutos']
+  list_product:  //a[@data-testid='listarProdutos']
+  pesquisar_input:  //input[@data-testid='pesquisar']
+  button_pesquisar:  //button[@data-testid='botaoPesquisar']
+
+Novo_produto:
+  nome_prod:  //input[@id='nome']
+  preco:  //input[@id='price']
+  descricao:  //textarea[@id='description']
+  qtdd_prod:  //input[@id='quantity']
+  btn_cad:  //button[@data-testid='cadastarProdutos']
+
+
+Produtos_cadastrados:
+  login_text:  //h5[contains(.,'Logitech MX Vertical')]
+  btn_add_login:  (//button[contains(.,'Adicionar a lista')])[1]
+  teclado_text:  //h5[contains(.,'Teclado Microsoft')]
+  btn_add_teclado:  (//button[contains(.,'Adicionar a lista')])[2]
+  phone_text_philco:  //h5[contains(.,'Headphone Philco')]
+  btn_add_philco:  (//button[contains(.,'Adicionar a lista')])[7]
+  phone_text_asus:  //h5[contains(.,'Headphone Asus')]
+  btn_add_asus:  (//button[contains(.,'Adicionar a lista')])[8]
+
+  btn_add_carrinho:  //button[contains(.,'Adicionar no carrinho')]
+
+
