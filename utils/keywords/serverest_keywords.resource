@@ -14,7 +14,8 @@ Create Date user
     ${lastName}=     FakerLibrary.Last Name
     Set Suite Variable       ${NameCompleto}     ${firstName} ${lastName}   
     ${email}=    FakerLibrary.Email
-    Set Suite Variable    ${email}
+    ${email-teste}    Set Variable    ${firstName}@automation.com.br
+    Set Suite Variable    ${email_final}    ${email-teste}
     ${password}=    FakerLibrary.Password
     Set Suite Variable    ${password}
 
@@ -46,7 +47,7 @@ Cadastrar novo usuario Severest como admin
     Click Element    ${login.link_cadastrar}
     Wait Until Element Is Enabled    ${cadastro.name_cadastro}
     Input Text    ${Cadastro.name_cadastro}    ${NameCompleto}
-    Input Text    ${Cadastro.email_cadastro}   ${email}
+    Input Text    ${Cadastro.email_cadastro}   ${email_final}
     Input Text    ${Cadastro.senha_cadastro}   ${password}
     Click Element    ${Cadastro.check_box_adm}
     Click Element    ${Cadastro.button_cadastro}  
@@ -61,7 +62,7 @@ Cadastrar novo usuario Severest e logar no sistema
     Click Element    ${login.link_cadastrar}
     Wait Until Element Is Enabled    ${cadastro.name_cadastro}
     Input Text    ${Cadastro.name_cadastro}    ${NameCompleto}
-    Input Text    ${Cadastro.email_cadastro}   ${email}
+    Input Text    ${Cadastro.email_cadastro}   ${email_final}
     Input Text    ${Cadastro.senha_cadastro}   ${password}
     Click Element    ${Cadastro.button_cadastro}  
     Sleep    10

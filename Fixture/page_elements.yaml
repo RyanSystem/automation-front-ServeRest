@@ -33,7 +33,7 @@ Novo_produto:
 
 Produtos_cadastrados:
   login_text:  //h5[contains(.,'Logitech MX Vertical')]
-  btn_add_login:  (//button[contains(.,'Adicionar a lista')])[1]
+  btn_add_lista:  (//button[contains(.,'Adicionar a lista')])
   teclado_text:  //h5[contains(.,'Teclado Microsoft')]
   btn_add_teclado:  (//button[contains(.,'Adicionar a lista')])[2]
   phone_text_philco:  //h5[contains(.,'Headphone Philco')]
